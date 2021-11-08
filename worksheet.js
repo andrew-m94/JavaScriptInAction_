@@ -62,3 +62,27 @@ for (i = 0; i < 10; i++) {
     }
     isOdd++;
 }
+
+function printMovieName(){
+    let favoriteMovie = 'Inception';
+    console.log(favoriteMovie);
+}
+
+printMovieName();
+
+function favoriteBand(){
+    userFavorite = prompt('What is your favorite band?');
+    return userFavorite;
+}
+/*
+userFavoriteBand = favoriteBand();
+console.log(userFavoriteBand);
+
+
+function concertDisplay(musicalAct){
+    myStreet = prompt('Enter the street you live on:');
+    console.log('it would be great if ' + musicalAct + ' played a show on ' + myStreet);
+}
+
+concertDisplay(userFavoriteBand);
+*/
