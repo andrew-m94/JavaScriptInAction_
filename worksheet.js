@@ -3,11 +3,11 @@ console.log(dayOfWeek);
 
 dayOfWeek = 'Friday';
 console.log("I can't wait for " + dayOfWeek);
-/*
+
 let animalInput = prompt('What is your favorite animal?');
 let colorInput = prompt('What is your favorite color?');
 console.log("I've never seen a " + colorInput + ' ' + animalInput);
-*/
+
 let timeOfDay = 1300;
 let meal = 'meal';
 
@@ -25,7 +25,7 @@ else if(timeOfDay > 1700) {
  
 console.log(meal);
 
-let randomNumber = ((Math.random() * 10))
+let randomNumber = Math.floor(Math.random() * 10)
 
 if (randomNumber >= 0 && randomNumber <= 2){
     console.log('Beatles');
@@ -74,7 +74,7 @@ function favoriteBand(){
     userFavorite = prompt('What is your favorite band?');
     return userFavorite;
 }
-/*
+
 userFavoriteBand = favoriteBand();
 console.log(userFavoriteBand);
 
@@ -85,7 +85,6 @@ function concertDisplay(musicalAct){
 }
 
 concertDisplay(userFavoriteBand);
-*/
 
 let desktopItems = ['computer', 'lamp', 'pencil'];
 console.log(desktopItems[1]);
@@ -93,4 +92,28 @@ desktopItems.push('Infinity Gauntlet');
 
 for (item in desktopItems){
     console.log(desktopItems[item]);
+}
+
+let magicNumber = Math.floor(Math.random() * 100);
+let guess = 0;
+
+while (guess != magicNumber){
+    guess = prompt('Enter the magic number!');
+
+    if (guess == magicNumber){
+        console.log(magicNumber + '! You guessed correct!');
+        break;
+    }
+
+    else if (guess > magicNumber){
+        console.log('Too high!');
+    }
+
+    else if (guess < magicNumber){
+        console.log('Too low!');
+    }
+
+    if (guess >= magicNumber - 10  && guess < magicNumber || guess <= magicNumber + 10 && guess > magicNumber){
+        console.log('Getting Warmer!');
+    }
 }
