@@ -86,3 +86,11 @@ function concertDisplay(musicalAct){
 
 concertDisplay(userFavoriteBand);
 */
+
+let desktopItems = ['computer', 'lamp', 'pencil'];
+console.log(desktopItems[1]);
+desktopItems.push('Infinity Gauntlet');
+
+for (item in desktopItems){
+    console.log(desktopItems[item]);
+}
